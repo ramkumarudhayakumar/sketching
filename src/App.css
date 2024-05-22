@@ -1,0 +1,72 @@
+.card-1,
+.card-2 {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0)
+  );
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+}
+.card-1:hover,
+.card-2:hover {
+  box-shadow: #00ff00 0px 3px 8px;
+  transition: 1s;
+}
+.card-button {
+  color: #00ff00;
+  border-radius: 20px;
+  box-shadow: #00ff00 0px 3px 8px;
+}
+.card-h3 {
+  background: linear-gradient(43deg, #4158d0 0%, #c850c0 46%, #ffcc70 100%);
+  -webkit-background-clip: text;
+  color: transparent;
+  cursor: pointer;
+}
+.nav-li:hover {
+  background: linear-gradient(43deg, #4158d0 0%, #c850c0 46%, #ffcc70 100%);
+  -webkit-background-clip: text;
+  color: skyblue;
+  text-shadow: 1px 1px 2px pink;
+  transition: 1s;
+}
+.nav-li {
+  color: white;
+}
+.nav-ul {
+  animation: navul 0.5s linear 0.5s;
+}
+@keyframes navul {
+  from {
+    transform: translateY(0px);
+  }
+  25% {
+    transform: translateY(-40px);
+  }
+  50% {
+    transform: translateY(0px);
+  }
+  75% {
+    transform: translateY(-30px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+  125% {
+    transform: translateY(-20px);
+  }
+}
+.navPopUp {
+  animation: navHover 0.2s linear;
+}
+
+@keyframes navHover {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-10px);
+  }
+}
