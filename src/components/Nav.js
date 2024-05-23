@@ -1,6 +1,8 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link } from "react-scroll";
 import { useRef } from "react";
+import { AiFillInfoCircle } from "react-icons/ai";
+import { MdDesignServices } from "react-icons/md";
 
 export default function Nav() {
   const navRef1 = useRef();
@@ -18,8 +20,8 @@ export default function Nav() {
     navRef2.current.classList.remove("navPopUp");
   }
   return (
-    <nav className="me-5 mt-3">
-      <ul className="list-inline d-flex gap-5 nav-ul">
+    <nav className="me-md-5 mt-5">
+      <ul className="list-inline d-flex  gap-md-5 nav-ul">
         <li
           ref={navRef1}
           className="list-inline-item"
@@ -27,10 +29,18 @@ export default function Nav() {
           onMouseLeave={navLeave1}
         >
           <Link
-            ref={navRef1}
-            className="text-decoration-none fw-bold  fs-3 nav-li"
+            to="about"
+            spy={true}
+            smooth={true}
+            offset={0}
+            duration={500}
+            className="text-decoration-none fw-bold  fs-md-2 nav-li"
             style={{ fontFamily: "Georgia,serif" }}
           >
+            <AiFillInfoCircle
+              style={{ background: "yellow", color: "a020f0" }}
+              className="rounded-circle p-1"
+            />{" "}
             About
           </Link>
         </li>
@@ -40,7 +50,18 @@ export default function Nav() {
           onMouseEnter={navEnter2}
           onMouseLeave={navLeave2}
         >
-          <Link className="text-decoration-none fw-bold fs-3 nav-li">
+          <Link
+            to="services"
+            spy={true}
+            smooth={true}
+            offset={0}
+            duration={500}
+            className="text-decoration-none fw-bold  fs-md-3 nav-li"
+          >
+            <MdDesignServices
+              style={{ background: "yellow", color: "a020f0" }}
+              className="rounded-circle p-1 me-1"
+            />
             Services
           </Link>
         </li>

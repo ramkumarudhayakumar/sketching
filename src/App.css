@@ -1,5 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Pacifico&display=swap");
+
 .card-1,
-.card-2 {
+.card-2,
+.about-card,
+.services-card,
+.payment-card {
   background: linear-gradient(
     135deg,
     rgba(255, 255, 255, 0.1),
@@ -8,11 +14,19 @@
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   border-radius: 20px;
+  border: 0.3px solid white;
+}
+.service-innercard {
+  background: linear-gradient(135deg, #4affa3, #90ee90);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  box-shadow: #a020f0 0px 4px 12px;
 }
 .card-1:hover,
 .card-2:hover {
   box-shadow: #00ff00 0px 3px 8px;
-  transition: 1s;
+  transition: 0.5s;
 }
 .card-button {
   color: #00ff00;
@@ -25,16 +39,37 @@
   color: transparent;
   cursor: pointer;
 }
-.nav-li:hover {
+.app-button {
+  background: linear-gradient(43deg, #77a1d3 30%, #79cbca 30%, #e684ae 70%);
+  color: #00ff00;
+  cursor: pointer;
+}
+.app-button:hover {
+  background: linear-gradient(43deg, #e684ae 70%, #79cbca 30%, #77a1d3 30%);
+}
+.nav-li,
+.app-row1-h3,
+.footer-p,
+.footer-h3 {
   background: linear-gradient(43deg, #4158d0 0%, #c850c0 46%, #ffcc70 100%);
   -webkit-background-clip: text;
-  color: skyblue;
-  text-shadow: 1px 1px 2px pink;
-  transition: 1s;
+  color: transparent;
 }
-.nav-li {
-  color: white;
+
+.service-card-col-h1 {
+  background: linear-gradient(43deg, #4158d0 0%, #7a6985 46%, #9400d3 100%);
+  -webkit-background-clip: text;
+  color: transparent;
 }
+.nav-li:hover {
+  color: #00ff00;
+}
+.card-about-h1 {
+  background: linear-gradient(43deg, #4158d0 0%, #c850c0 46%, #ffcc70 100%);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
 .nav-ul {
   animation: navul 0.5s linear 0.5s;
 }
@@ -68,5 +103,10 @@
   }
   to {
     transform: translateY(-10px);
+  }
+}
+@media (max-width: 576px) {
+  .nav-ul {
+    margin-top: 14px;
   }
 }
