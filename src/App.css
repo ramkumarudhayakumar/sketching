@@ -16,6 +16,9 @@
   border-radius: 20px;
   border: 0.3px solid white;
 }
+.about-card {
+  cursor: pointer;
+}
 .service-innercard {
   background: linear-gradient(135deg, #4affa3, #90ee90);
   backdrop-filter: blur(10px);
@@ -60,6 +63,7 @@
   background: linear-gradient(43deg, #4158d0 0%, #7a6985 46%, #9400d3 100%);
   -webkit-background-clip: text;
   color: transparent;
+  cursor: pointer;
 }
 .nav-li:hover {
   color: #00ff00;

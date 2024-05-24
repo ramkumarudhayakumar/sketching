@@ -15,13 +15,19 @@ export default function Footer() {
               color: "#00ff00",
               letterSpacing: "4px",
               wordSpacing: "3px",
+              cursor: "pointer",
             }}
           >
             Jarul Art Studio
           </h1>
-          <h3 className="fw-bold footer-h3 mb-3">Connect With Us</h3>
-          <p className="footer-p fs-5">93853 20583</p>
-          <p className="footer-p fs-5">
+          <h3 className="fw-bold footer-h3 mb-3" style={{ cursor: "pointer" }}>
+            Connect With Us
+          </h3>
+          <p className="footer-p fs-5" style={{ cursor: "pointer" }}>
+            93853 20583
+          </p>
+          <p className="footer-p fs-5" style={{ cursor: "pointer" }}></p>
+          <p className="footer-p fs-5" style={{ cursor: "pointer" }}>
             14/24, Padikattu Thurai, Karur, Tamilnadu 639001
           </p>
           <div className="d-flex gap-5">
