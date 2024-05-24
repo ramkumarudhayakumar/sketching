@@ -1,9 +1,14 @@
 import React, { Fragment } from "react";
+import { useNavigate } from "react-router-dom";
 import { Typewriter } from "react-simple-typewriter";
 import { IoIosArrowDropdownCircle } from "react-icons/io";
 import { GiFeather } from "react-icons/gi";
 
 export default function Main() {
+  const navigate = useNavigate();
+  function scannerHandler() {
+    navigate("/payment/page");
+  }
   return (
     <Fragment>
       <div className="row my-5">
@@ -51,7 +56,10 @@ export default function Main() {
               <h3 className="text-center mt-5 fw-blod card-h3">
                 Personal Training
               </h3>
-              <button className="btn my-4 fw-bold card-button align-self-center">
+              <button
+                className="btn my-4 fw-bold card-button align-self-center"
+                onClick={scannerHandler}
+              >
                 Pay Now <IoIosArrowDropdownCircle className="ms-2 fs-4" />
               </button>
             </div>
@@ -75,7 +83,10 @@ export default function Main() {
               >
                 Online Training
               </h3>
-              <button className="btn my-4 fw-bold card-button align-self-center">
+              <button
+                className="btn my-4 fw-bold card-button align-self-center"
+                onClick={scannerHandler}
+              >
                 Pay Now
                 <IoIosArrowDropdownCircle className="ms-2 fs-4" />
               </button>

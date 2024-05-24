@@ -5,7 +5,8 @@
 .card-2,
 .about-card,
 .services-card,
-.payment-card {
+.payment-card,
+.sampleArt-card {
   background: linear-gradient(
     135deg,
     rgba(255, 255, 255, 0.1),
@@ -24,11 +25,11 @@
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   border-radius: 20px;
-  box-shadow: #a020f0 0px 4px 12px;
+  box-shadow: #a020f0 0px 19px 38px, #a020f0 0px 15px 12px, #a020f0 0px 5px 15px;
 }
 .card-1:hover,
 .card-2:hover {
-  box-shadow: #00ff00 0px 3px 8px;
+  box-shadow: #00ff00 0px 5px 15px;
   transition: 0.5s;
 }
 .card-button {
@@ -36,6 +37,15 @@
   border-radius: 20px;
   box-shadow: #00ff00 0px 3px 8px;
 }
+.services-button {
+  color: #00ff00;
+  border-radius: 10px;
+  box-shadow: #00ff00 0px 3px 8px;
+  font-size: 20px;
+  height: 50px;
+  width: 200px;
+}
+
 .card-h3 {
   background: linear-gradient(43deg, #4158d0 0%, #c850c0 46%, #ffcc70 100%);
   -webkit-background-clip: text;
@@ -60,7 +70,7 @@
 }
 
 .service-card-col-h1 {
-  background: linear-gradient(43deg, #4158d0 0%, #7a6985 46%, #9400d3 100%);
+  background: linear-gradient(43deg, #ec008c 40%, #9400d3 60%);
   -webkit-background-clip: text;
   color: transparent;
   cursor: pointer;
@@ -114,8 +124,7 @@
     margin-top: 14px;
   }
   .about-container,
-  .services-container,
-  .payment-page-container {
+  .services-container {
     margin-left: 55px;
   }
   .paynow-link {

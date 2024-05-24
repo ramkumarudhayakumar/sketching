@@ -1,7 +1,13 @@
 import React, { Fragment } from "react";
+import { useNavigate } from "react-router-dom";
 import Tilt from "react-parallax-tilt";
+import { FaRegGrinHearts } from "react-icons/fa";
 
 export default function Services() {
+  const navigate = useNavigate();
+  function sampleArtHandler() {
+    navigate("/sample/art");
+  }
   return (
     <Fragment>
       <div
@@ -79,6 +85,18 @@ export default function Services() {
                     </div>
                   </div>
                 </Tilt>
+              </div>
+              <div className="d-flex justify-content-center mt-5">
+                <button
+                  className="btn fw-bold text-center services-button "
+                  onClick={sampleArtHandler}
+                >
+                  View Arts
+                  <FaRegGrinHearts
+                    className="ms-2 mb-1"
+                    style={{ fontSize: "25px" }}
+                  />
+                </button>
               </div>
             </div>
           </div>
