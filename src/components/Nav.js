@@ -34,7 +34,7 @@ export default function Nav() {
             smooth={true}
             offset={0}
             duration={500}
-            className="text-decoration-none fw-bold  fs-md-2 nav-li"
+            className="text-decoration-none fw-bold nav-li"
             style={{ fontFamily: "Georgia,serif" }}
           >
             <AiFillInfoCircle
@@ -56,7 +56,7 @@ export default function Nav() {
             smooth={true}
             offset={0}
             duration={500}
-            className="text-decoration-none fw-bold  fs-md-3 nav-li"
+            className="text-decoration-none fw-bold  nav-li"
           >
             <MdDesignServices
               style={{ background: "yellow", color: "a020f0" }}

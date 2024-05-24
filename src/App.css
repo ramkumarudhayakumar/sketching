@@ -65,7 +65,7 @@
   color: #00ff00;
 }
 .card-about-h1 {
-  background: linear-gradient(43deg, #4158d0 0%, #c850c0 46%, #ffcc70 100%);
+  background: linear-gradient(43deg, #ec008c 40%, #fc6767 60%);
   -webkit-background-clip: text;
   color: transparent;
 }
@@ -105,8 +105,28 @@
     transform: translateY(-10px);
   }
 }
-@media (max-width: 576px) {
+@media screen and (max-width: 576px) {
   .nav-ul {
     margin-top: 14px;
+  }
+  .about-container,
+  .services-container,
+  .payment-page-container {
+    margin-left: 55px;
+  }
+  .paynow-link {
+    margin-left: 100px;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .nav-li {
+    font-size: 25px;
+  }
+}
+@media (orientation: landscape) {
+  .main-col-2 {
+    margin-left: 130px;
+    margin-top: 50px;
   }
 }

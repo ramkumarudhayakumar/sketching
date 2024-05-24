@@ -5,11 +5,11 @@ export default function About() {
   return (
     <div
       id="about"
-      className="container d-flex justify-content-center mx-5"
+      className="container d-flex justify-content-center about-container"
       style={{ marginTop: "200px", marginBottom: "200px" }}
     >
       <Tilt>
-        <div className="card about-card">
+        <div className="card about-card ">
           <div className="card-body">
             <h1 className="fw-bold text-center my-3 card-about-h1">
               ABOUT <span style={{ color: "#00ff00" }}>US</span>
