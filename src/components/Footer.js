@@ -43,23 +43,23 @@ export default function Footer() {
               href=""
               target="blank"
               className="fw-bold"
-              style={{ fontSize: "50px", color: "red" }}
+              style={{ fontSize: "50px", color: "#1877f2" }}
             >
-              <FaYoutube />
+              <FaFacebook />
             </a>
             <a
               href=""
               target="blank"
               className="fw-bold"
-              style={{ fontSize: "50px", color: "blue" }}
+              style={{ fontSize: "50px", color: "#FF0000" }}
             >
-              <FaFacebook />
+              <FaYoutube />
             </a>
             <a
               href="https://x.com/harinajarul?lang=en"
               target="blank"
               className="fw-bold"
-              style={{ fontSize: "50px", color: "blue" }}
+              style={{ fontSize: "50px", color: "#08a0e9" }}
             >
               <FaTwitter />
             </a>

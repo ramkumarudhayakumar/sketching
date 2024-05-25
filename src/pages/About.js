@@ -1,7 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Tilt from "react-parallax-tilt";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export default function About() {
+  useEffect(() => {
+    AOS.init({ duration: 2000, delay: 500 });
+  }, []);
   return (
     <div
       id="about"
@@ -9,7 +14,7 @@ export default function About() {
       style={{ marginTop: "200px", marginBottom: "200px" }}
     >
       <Tilt>
-        <div className="card about-card ">
+        <div className="card about-card " data-aos="zoom-in">
           <div className="card-body">
             <h1 className="fw-bold text-center my-3 card-about-h1">
               ABOUT <span style={{ color: "#00ff00" }}>US</span>

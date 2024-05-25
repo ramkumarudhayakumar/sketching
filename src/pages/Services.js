@@ -1,9 +1,14 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import Tilt from "react-parallax-tilt";
 import { FaRegGrinHearts } from "react-icons/fa";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export default function Services() {
+  useEffect(() => {
+    AOS.init({ duration: 700, delay: 500 });
+  }, []);
   const navigate = useNavigate();
   function sampleArtHandler() {
     navigate("/sample/art");
@@ -20,7 +25,10 @@ export default function Services() {
             <div className="row">
               <div className="col-12 col-sm-6 col-md-4">
                 <Tilt>
-                  <div className="card service-innercard mx-md-3 my-5">
+                  <div
+                    className="card service-innercard mx-md-3 my-5 "
+                    data-aos="flip-right"
+                  >
                     <div className="card-body">
                       <img
                         src="images/Art1.jpg"
@@ -43,7 +51,10 @@ export default function Services() {
               <div className="col-12 col-sm-6 col-md-4">
                 <Tilt>
                   {" "}
-                  <div className="card service-innercard mx-md-3 my-5">
+                  <div
+                    className="card service-innercard mx-md-3 my-5"
+                    data-aos="flip-up"
+                  >
                     <div className="card-body">
                       <img
                         src="images/Art2.jpg"
@@ -66,7 +77,10 @@ export default function Services() {
               <div className="col-12 col-sm-12 col-md-4">
                 <Tilt>
                   {" "}
-                  <div className="card service-innercard mx-md-3 my-5">
+                  <div
+                    className="card service-innercard mx-md-3 my-5"
+                    data-aos="flip-left"
+                  >
                     <div className="card-body">
                       <img
                         src="images/nayanthara.jpg"

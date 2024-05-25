@@ -28,7 +28,7 @@ export default function Main() {
           </h1>
           <h3 className="mt-3 app-row1-h3">Welcome to my Page</h3>
         </div>
-        <div className="col-12 col-sm-12 col-md-6 ">
+        <div className="col-12 col-sm-12 col-md-6 d-flex justify-content-center">
           <img
             className="main-col-2"
             src="images/Welcome.png"
