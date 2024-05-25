@@ -24,11 +24,11 @@ export default function PaymentPage() {
     <Fragment>
       <div
         className="container payment-page-container d-flex justify-content-center align-items-center"
-        style={{ height: "100vh" }}
+        style={{ height: "70vh" }}
       >
         <div className="row">
-          <div className="col d-grid justify-content-center">
-            <div className="card payment-card m-5" data-aos="zoom-in-up">
+          <div className="col d-grid justify-content-center ">
+            <div className="card payment-card m-5 " data-aos="zoom-in">
               <div className="card-body m-3 ">
                 <img
                   src={scanner}
@@ -40,6 +40,52 @@ export default function PaymentPage() {
                   }}
                   className="img-fluid"
                 />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="container">
+        <div className="card my-3 payment-page-card-1">
+          <div className="card-body">
+            <div className="row">
+              <div className="col">
+                <img src="" />
+              </div>
+              <div className="col">
+                <div>
+                  <h5>
+                    Training Mode :<span>Online</span>
+                  </h5>
+                  <h5>
+                    Training Fees :<span>3000 /-</span>
+                  </h5>
+                  <h5>
+                    Training Duration :<span>Three Months</span>
+                  </h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="card my-3 payment-page-card-2">
+          <div className="card-body">
+            <div className="row">
+              <div className="col">
+                <img src="" />
+              </div>
+              <div className="col">
+                <div className="">
+                  <h5>
+                    Training Mode :<span>Offline</span>
+                  </h5>
+                  <h5>
+                    Training Fees :<span>4000 /-</span>
+                  </h5>
+                  <h5>
+                    Training Duration :<span>Two Months</span>
+                  </h5>
+                </div>
               </div>
             </div>
           </div>

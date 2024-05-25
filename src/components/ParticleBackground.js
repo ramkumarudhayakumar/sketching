@@ -37,7 +37,7 @@ const ParticleBackground = () => {
         delay: 0,
         fullScreen: {
           enable: true,
-          zIndex: -1,
+          zIndex: -2,
         },
         detectRetina: true,
         duration: 0,
