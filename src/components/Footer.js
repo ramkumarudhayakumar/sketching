@@ -1,10 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { CiInstagram } from "react-icons/ci";
 import { FaFacebook } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export default function Footer() {
+  useEffect(() => {
+    AOS.init({ duration: 2000, delay: 500 });
+  }, []);
   return (
     <div className="container m-5">
       <div className="row">
@@ -36,6 +41,7 @@ export default function Footer() {
               target="blank"
               className="fw-bold footer-instagram"
               style={{ fontSize: "50px", color: "#be2ed6" }}
+              data-aos="fade-up"
             >
               <CiInstagram />
             </a>
@@ -44,6 +50,7 @@ export default function Footer() {
               target="blank"
               className="fw-bold"
               style={{ fontSize: "50px", color: "#1877f2" }}
+              data-aos="fade-up"
             >
               <FaFacebook />
             </a>
@@ -52,6 +59,7 @@ export default function Footer() {
               target="blank"
               className="fw-bold"
               style={{ fontSize: "50px", color: "#FF0000" }}
+              data-aos="fade-up"
             >
               <FaYoutube />
             </a>
@@ -60,6 +68,7 @@ export default function Footer() {
               target="blank"
               className="fw-bold"
               style={{ fontSize: "50px", color: "#08a0e9" }}
+              data-aos="fade-up"
             >
               <FaTwitter />
             </a>
