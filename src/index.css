@@ -10,7 +10,10 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: black;
+  background-image: url("images/background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
   touch-action: pan-y;
   user-select: none;
   overflow-x: hidden;

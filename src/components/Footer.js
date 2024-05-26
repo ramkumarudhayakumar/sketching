@@ -1,19 +1,14 @@
 import React, { useEffect } from "react";
-import { CiInstagram } from "react-icons/ci";
+import { GrInstagram } from "react-icons/gr";
 import { FaFacebook } from "react-icons/fa";
-import { FaYoutube } from "react-icons/fa";
+import { IoLogoYoutube } from "react-icons/io";
 import { FaTwitter } from "react-icons/fa";
-import AOS from "aos";
-import "aos/dist/aos.css";
 
 export default function Footer() {
-  useEffect(() => {
-    AOS.init({ duration: 2000, delay: 500 });
-  }, []);
   return (
     <div className="container m-5">
       <div className="row">
-        <div className="col d-grid   align-content-center ms-3 justify-content-center">
+        <div className="col d-grid align-content-center ms-3 justify-content-center">
           <h1
             className="mb-5 fw-bold"
             style={{
@@ -35,42 +30,38 @@ export default function Footer() {
           <p className="footer-p fs-5" style={{ cursor: "pointer" }}>
             14/24, Padikattu Thurai, Karur, Tamilnadu 639001
           </p>
-          <div className="d-flex gap-5">
+          <div className="d-flex gap-5 mt-3">
             <a
               href="https://www.instagram.com/harinajarul_sketches/?hl=en"
               target="blank"
-              className="fw-bold footer-instagram"
-              style={{ fontSize: "50px", color: "#be2ed6" }}
-              data-aos="fade-up"
+              className="fw-bold  footer-instagram"
+              style={{ color: "#be2ed6" }}
             >
-              <CiInstagram />
+              <GrInstagram size={30} />
             </a>
             <a
               href=""
               target="blank"
               className="fw-bold"
-              style={{ fontSize: "50px", color: "#1877f2" }}
-              data-aos="fade-up"
+              style={{ color: "#1877f2" }}
             >
-              <FaFacebook />
+              <FaFacebook size={30} />
             </a>
             <a
               href=""
               target="blank"
               className="fw-bold"
-              style={{ fontSize: "50px", color: "#FF0000" }}
-              data-aos="fade-up"
+              style={{ color: "#FF0000" }}
             >
-              <FaYoutube />
+              <IoLogoYoutube size={30} />
             </a>
             <a
               href="https://x.com/harinajarul?lang=en"
               target="blank"
               className="fw-bold"
-              style={{ fontSize: "50px", color: "#08a0e9" }}
-              data-aos="fade-up"
+              style={{ color: "#08a0e9" }}
             >
-              <FaTwitter />
+              <FaTwitter size={30} />
             </a>
           </div>
         </div>

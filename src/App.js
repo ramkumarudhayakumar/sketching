@@ -8,13 +8,11 @@ import PayNowButton from "./pages/PayNowButton";
 import PaymentPage from "./pages/PaymentPage";
 import Footer from "./components/Footer";
 import SampleArt from "./pages/SampleArt";
-import ParticleBackground from "./components/ParticleBackground";
 import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (
     <div className="App">
-      <ParticleBackground />
       <Routes>
         <Route
           exact

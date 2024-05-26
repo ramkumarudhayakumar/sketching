@@ -6,7 +6,9 @@
 .about-card,
 .services-card,
 .payment-card,
-.sampleArt-card {
+.sampleArt-card,
+.payment-page-card-1,
+.payment-page-card-2 {
   background: linear-gradient(
     135deg,
     rgba(255, 255, 255, 0.1),
@@ -15,7 +17,8 @@
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   border-radius: 20px;
-  border: 0.3px solid white;
+  /* border: 0.3px solid white;
+ */
 }
 .about-card {
   cursor: pointer;
@@ -27,9 +30,13 @@
   border-radius: 20px;
   box-shadow: #a020f0 0px 19px 38px, #a020f0 0px 15px 12px, #a020f0 0px 5px 15px;
 }
+.card-1,
+.card-2 {
+  transition: 0.5s;
+}
 .card-1:hover,
 .card-2:hover {
-  box-shadow: #00ff00 0px 5px 15px;
+  box-shadow: #00ff00 0px 19px 38px, #00ff00 0px 15px 12px, #00ff00 0px 5px 15px;
   transition: 0.5s;
 }
 .card-button {
@@ -60,10 +67,17 @@
 .app-button:hover {
   background: linear-gradient(43deg, #e684ae 70%, #79cbca 30%, #77a1d3 30%);
 }
+.payment-span {
+  background: linear-gradient(43deg, #77a1d3 30%, #79cbca 30%, #e684ae 70%);
+  -webkit-background-clip: text;
+  color: transparent;
+  cursor: pointer;
+}
 .nav-li,
 .app-row1-h3,
 .footer-p,
-.footer-h3 {
+.footer-h3,
+.payment-notice {
   background: linear-gradient(43deg, #4158d0 0%, #c850c0 46%, #ffcc70 100%);
   -webkit-background-clip: text;
   color: transparent;
@@ -90,79 +104,75 @@
   justify-content: center;
   align-items: center;
 }
-.payment-page-card-1,
+/* .payment-page-card-1,
 .payment-page-card-2 {
-  background: #222;
   border-radius: 10px;
   cursor: pointer;
   overflow: hidden;
-
   position: relative;
-}
+} */
 
-.payment-page-card-1 .card-body,
+/* .payment-page-card-1 .card-body,
 .payment-page-card-2 .card-body {
   opacity: 0.1;
   z-index: 1;
-  color: #fff;
 }
 .payment-page-card-1::before {
   position: absolute;
   content: "";
   width: 100%;
   height: 100%;
-  background: #ff0080;
-  transform: rotate(10deg);
-  transition: 1s;
+  background: tomato;
+  /* transform: rotate(10deg); */
+/* transition: 1s;
 }
 .payment-page-card-1:hover:before {
   animation: animate1 6s linear infinite;
-}
+}  */
 
-.payment-page-card-2:before {
+/* .payment-page-card-2:before {
   position: absolute;
   content: "";
   width: 100%;
   height: 100%;
-  background: #ff0800;
-  transform: rotate(-10deg);
-  transform: 1s;
-}
-.payment-page-card-2:hover:before {
+  background: #ff0080;
+  /* transform: rotate(-10deg); */
+/* transform: 1s;
+}  */
+/* .payment-page-card-2:hover:before {
   animation: animate2 6s linear infinite;
-}
+} */
 
-.payment-page-card-1::after {
+/* .payment-page-card-1::after {
   position: absolute;
   content: "";
   inset: 5px;
-  background: #000;
-}
-@keyframes animate1 {
-  from {
+  background: #28282b;
+} */
+/* @keyframes animate1 {
+  /* from {
     transform: rotate(0deg);
+  } */
+/* 50% {
+    /* transform: rotate(-360deg); */
+/* filter: hue-rotate(-360deg) saturate(1000%);
   }
-  to {
-    transform: rotate(-360deg);
-    filter: hue-rotate(-360deg) saturate(1000%);
-  }
-}
-.payment-page-card-2::after {
+}   */
+/* .payment-page-card-2::after {
   position: absolute;
   content: "";
   inset: 5px;
-  background: #000;
-  border-radius: 8px;
-}
-@keyframes animate2 {
-  from {
+  background: #28282b;
+} */
+/* @keyframes animate2 {
+  /* from {
     transform: rotate(0deg);
+  } */
+/* 50% {
+    /* transform: rotate(-360deg); */
+/* filter: hue-rotate(-360deg) saturate(1000%);
   }
-  to {
-    transform: rotate(-360deg);
-    filter: hue-rotate(-360deg) saturate(1000%);
-  }
-}
+}    */
 
 .nav-ul {
   animation: navul 0.5s linear 0.5s;
@@ -205,7 +215,7 @@
   }
   .about-container,
   .services-container {
-    margin-left: 50px;
+    margin-left: 45px;
   }
   .paynow-link {
     margin-left: 100px;

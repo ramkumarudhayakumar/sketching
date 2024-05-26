@@ -45,13 +45,14 @@ export default function Main() {
           <div className="card card-1 ">
             <div className="card-body d-flex flex-column">
               <img
-                src="images/pencil.jpg"
+                src="images/offlineillus.png"
                 style={{
                   width: "500px",
                   height: "300px",
                   borderRadius: "20px",
+                  filter: "drop-shadow(#a020f0 0px 4px 12px)",
                 }}
-                className="img-fluid "
+                className="img-fluid"
               />
               <h3 className="text-center mt-5 fw-blod card-h3">
                 Personal Training
@@ -69,11 +70,12 @@ export default function Main() {
           <div className="card card-2">
             <div className="card-body d-flex flex-column">
               <img
-                src="images/brush.jpg"
+                src="images/onlineillus.png"
                 style={{
                   width: "500px",
                   height: "300px",
                   borderRadius: "20px",
+                  filter: "drop-shadow(#a020f0 0px 4px 12px)",
                 }}
                 className="img-fluid"
               />
