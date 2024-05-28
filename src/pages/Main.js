@@ -3,14 +3,33 @@ import { useNavigate } from "react-router-dom";
 import { Typewriter } from "react-simple-typewriter";
 import { IoIosArrowDropdownCircle } from "react-icons/io";
 import { GiFeather } from "react-icons/gi";
+import { motion } from "framer-motion";
 
+const containerVariants = {
+  exit: {
+    x: "-100vw",
+    transition: {
+      ease: "easeInOut",
+    },
+  },
+};
+const btnVariants = {
+  hover: {
+    scale: 1.1,
+    color: "white",
+    textShadow: "0px 0px 8px rgb(255,255,255)",
+    transition: {
+      duration: 0.3,
+    },
+  },
+};
 export default function Main() {
   const navigate = useNavigate();
   function scannerHandler() {
     navigate("/payment/page");
   }
   return (
-    <Fragment>
+    <motion.Fragment variants={containerVariants} exit="exit">
       <div className="row my-5">
         <div className="col-12 col-sm-12 col-md-6 d-grid flex-column justify-content-center align-content-center">
           <h1>
@@ -26,7 +45,14 @@ export default function Main() {
               />
             </span>
           </h1>
-          <h3 className="mt-3 app-row1-h3">Welcome to my Page</h3>
+          <motion.h3
+            className="mt-3 app-row1-h3"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.5, duration: 2 }}
+          >
+            Welcome to my Page
+          </motion.h3>
         </div>
         <div className="col-12 col-sm-12 col-md-6 d-flex justify-content-center">
           <img
@@ -57,12 +83,14 @@ export default function Main() {
               <h3 className="text-center mt-5 fw-blod card-h3">
                 Personal Training
               </h3>
-              <button
+              <motion.button
                 className="btn my-4 fw-bold card-button align-self-center"
                 onClick={scannerHandler}
+                variants={btnVariants}
+                whileHover="hover"
               >
                 Pay Now <IoIosArrowDropdownCircle className="ms-2 fs-4" />
-              </button>
+              </motion.button>
             </div>
           </div>
         </div>
@@ -85,17 +113,19 @@ export default function Main() {
               >
                 Online Training
               </h3>
-              <button
+              <motion.button
                 className="btn my-4 fw-bold card-button align-self-center"
                 onClick={scannerHandler}
+                variants={btnVariants}
+                whileHover="hover"
               >
                 Pay Now
                 <IoIosArrowDropdownCircle className="ms-2 fs-4" />
-              </button>
+              </motion.button>
             </div>
           </div>
         </div>
       </div>
-    </Fragment>
+    </motion.Fragment>
   );
 }

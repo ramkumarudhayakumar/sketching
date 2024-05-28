@@ -4,6 +4,26 @@ import Tilt from "react-parallax-tilt";
 import { FaRegGrinHearts } from "react-icons/fa";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { motion } from "framer-motion";
+
+const containerVariants = {
+  exit: {
+    x: "-100vw",
+    transition: {
+      ease: "easeInOut",
+    },
+  },
+};
+const btnVariants = {
+  hover: {
+    scale: 1.1,
+    color: "white",
+    textShadow: "0px 0px 8px rgb(255,255,255)",
+    transition: {
+      duration: 0.3,
+    },
+  },
+};
 
 export default function Services() {
   useEffect(() => {
@@ -14,11 +34,13 @@ export default function Services() {
     navigate("/sample/art");
   }
   return (
-    <Fragment>
+    <motion.Fragment>
       <div
         id="services"
         className="container services-container"
         style={{ marginTop: "200px", marginBottom: "200px" }}
+        variants={containerVariants}
+        exit="exit"
       >
         <div className="card services-card p-5 ">
           <div className="card-body">
@@ -101,21 +123,23 @@ export default function Services() {
                 </Tilt>
               </div>
               <div className="d-flex justify-content-center mt-5">
-                <button
+                <motion.button
                   className="btn fw-bold text-center services-button "
                   onClick={sampleArtHandler}
+                  variants={btnVariants}
+                  whileHover="hover"
                 >
                   View Arts
                   <FaRegGrinHearts
                     className="ms-2 mb-1"
                     style={{ fontSize: "25px" }}
                   />
-                </button>
+                </motion.button>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </Fragment>
+    </motion.Fragment>
   );
 }

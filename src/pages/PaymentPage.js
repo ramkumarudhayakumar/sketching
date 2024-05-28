@@ -6,7 +6,17 @@ import "aos/dist/aos.css";
 import Online from "../images/online.png";
 import Offline from "../images/offline.png";
 import { FaSpaceShuttle } from "react-icons/fa";
+import { motion } from "framer-motion";
 
+const h6Variants = {
+  hover: {
+    scale: 1.3,
+
+    transition: {
+      duration: 0.5,
+    },
+  },
+};
 export default function PaymentPage() {
   useEffect(() => {
     AOS.init({ duration: 2000, delay: 4000 });
@@ -26,10 +36,14 @@ export default function PaymentPage() {
   ) : (
     <Fragment>
       <div className="container">
-        <h6 className="text-center mt-5 payment-notice">
+        <motion.h6
+          className="text-center mt-5 payment-notice"
+          variants={h6Variants}
+          whileHover="hover"
+        >
           Notice : Once you complete your Payment Please Call me or Whatsapp me
           this Number 93853 20583
-        </h6>
+        </motion.h6>
       </div>
       <div
         className="container payment-page-container d-flex justify-content-center align-items-center"
@@ -55,7 +69,7 @@ export default function PaymentPage() {
         </div>
       </div>
       <div className="container">
-        <div className="card my-3 payment-page-card-1">
+        <motion.div className="card my-3 payment-page-card-1">
           <div className="card-body">
             <div className="row">
               <div className="col-4 d-flex justify-content-center align-items-center">
@@ -92,8 +106,8 @@ export default function PaymentPage() {
               </div>
             </div>
           </div>
-        </div>
-        <div className="card my-3 payment-page-card-2 ">
+        </motion.div>
+        <motion.div className="card my-3 payment-page-card-2 ">
           <div className="card-body">
             <div className="row">
               <div className="col-4 d-flex justify-content-center align-items-center">
@@ -130,7 +144,7 @@ export default function PaymentPage() {
               </div>
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </Fragment>
   );

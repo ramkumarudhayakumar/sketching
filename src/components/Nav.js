@@ -3,7 +3,22 @@ import { Link } from "react-scroll";
 import { useRef } from "react";
 import { AiFillInfoCircle } from "react-icons/ai";
 import { MdDesignServices } from "react-icons/md";
+import { motion } from "framer-motion";
 
+const navVariants = {
+  hidden: {
+    y: "-100vh",
+  },
+  visible: {
+    y: 0,
+    transition: {
+      delay: 0.5,
+      duration: 1,
+      type: "spring",
+      stiffness: 120,
+    },
+  },
+};
 export default function Nav() {
   const navRef1 = useRef();
   const navRef2 = useRef();
@@ -20,7 +35,12 @@ export default function Nav() {
     navRef2.current.classList.remove("navPopUp");
   }
   return (
-    <nav className="me-md-5 mt-5">
+    <motion.nav
+      className="me-md-5 mt-5"
+      variants={navVariants}
+      initial="hidden"
+      animate="visible"
+    >
       <ul className="list-inline d-flex  gap-md-5 nav-ul">
         <li
           ref={navRef1}
@@ -66,6 +86,6 @@ export default function Nav() {
           </Link>
         </li>
       </ul>
-    </nav>
+    </motion.nav>
   );
 }

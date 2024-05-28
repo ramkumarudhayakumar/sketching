@@ -174,29 +174,6 @@
   }
 }    */
 
-.nav-ul {
-  animation: navul 0.5s linear 0.5s;
-}
-@keyframes navul {
-  from {
-    transform: translateY(0px);
-  }
-  25% {
-    transform: translateY(-40px);
-  }
-  50% {
-    transform: translateY(0px);
-  }
-  75% {
-    transform: translateY(-30px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
-  125% {
-    transform: translateY(-20px);
-  }
-}
 .navPopUp {
   animation: navHover 0.2s linear;
 }
