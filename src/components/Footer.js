@@ -58,10 +58,11 @@ export default function Footer() {
             className="mb-5 fw-bold"
             style={{
               color: "#00ff00",
-              letterSpacing: "4px",
-              wordSpacing: "3px",
+              letterSpacing: "1px",
               cursor: "pointer",
               textShadow: "0px 0px 8px #a020f0",
+              fontFamily: "Roboto Mono, monospace",
+              fontStyle: "normal",
             }}
           >
             Jarul Art Studio

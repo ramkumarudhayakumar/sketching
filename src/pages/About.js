@@ -26,7 +26,7 @@ export default function About() {
     >
       <Tilt>
         <div className="card about-card " data-aos="zoom-in">
-          <div className="card-body">
+          <div className="card-body about-card-body">
             <h1 className="fw-bold text-center my-3 card-about-h1">
               ABOUT{" "}
               <span
@@ -43,10 +43,10 @@ export default function About() {
               style={{
                 wordSpacing: "3px",
                 letterSpacing: "2px",
-                lineHeight: "2em",
-                fontSize: "20px",
+                lineHeight: "1.5em",
+                fontSize: "25px",
                 color: "#FFDBE9",
-                fontFamily: "Lobster, sans-serif",
+                fontFamily: "Vesper Libre, serif",
                 fontStyle: "normal",
               }}
               whileHover={{

@@ -51,7 +51,7 @@ export default function Main() {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.5, duration: 2 }}
           >
-            Welcome to my Page
+            Welcome to Jarul Arts
           </motion.h3>
         </div>
         <div className="col-12 col-sm-12 col-md-6 d-flex justify-content-center">
@@ -61,15 +61,15 @@ export default function Main() {
             style={{
               width: "500px",
               height: "500px",
-              filter: "drop-shadow(#abf7b1 0px 4px 12px)",
+              // filter: "drop-shadow(#abf7b1 0px 4px 12px)",
             }}
           />
         </div>
       </div>
       <div className="row">
-        <div className="col-12 col-sm-12 col-md-6 d-flex align-items-center justify-content-center mx-5  mx-md-0 mt-5">
+        <div className="col-12 col-sm-12 col-md-6 d-flex align-items-center justify-content-center mx-4  mx-md-0 mt-5">
           <div className="card card-1 ">
-            <div className="card-body d-flex flex-column">
+            <div className="card-body d-flex flex-column  card-1-body">
               <img
                 src="images/offlineillus.png"
                 style={{
@@ -94,9 +94,9 @@ export default function Main() {
             </div>
           </div>
         </div>
-        <div className="col-12 col-sm-12 col-md-6 d-flex align-items-center justify-content-center mx-5  mx-md-0 mt-5">
+        <div className="col-12 col-sm-12 col-md-6 d-flex align-items-center justify-content-center mx-4  mx-md-0 mt-5">
           <div className="card card-2">
-            <div className="card-body d-flex flex-column">
+            <div className="card-body d-flex flex-column card-2-body">
               <img
                 src="images/onlineillus.png"
                 style={{

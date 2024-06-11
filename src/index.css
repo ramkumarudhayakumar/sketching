@@ -10,7 +10,15 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url("images/background.jpg");
+  /* background-image: url("images/background.jpg"); */
+  background: linear-gradient(
+    45deg,
+    #00072d,
+    #051650,
+    #0a2472,
+    #123499,
+    #1a43bf
+  );
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
